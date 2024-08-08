@@ -10,12 +10,12 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: process.env.API_KEY,
-  authDomain: "inventory-management-b7a35.firebaseapp.com",
+  authDomain: process.env.AUTH_DOMAIN,
   projectId: "inventory-management-b7a35",
   storageBucket: "inventory-management-b7a35.appspot.com",
-  messagingSenderId: "431994926178",
-  appId: "1:431994926178:web:93f530b74126cb6fb08d3b",
-  measurementId: "G-Q4G4YGVDVP"
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
+  measurementId: process.env.MEASUREMENT_ID
 };
 
 // Initialize Firebase
